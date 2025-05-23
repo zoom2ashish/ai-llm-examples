@@ -1,0 +1,8 @@
+yfinance
+duckduckgo-search
+llama-cpp-python
+requests
+langchain
+langchain-ollama
+langchain-community
+langchain-core
