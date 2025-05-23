@@ -9,8 +9,12 @@ This project is a stock analysis tool that allows users to analyze stock data us
 - Pass the stock data and news to LLM (Language Model) for analysis
 - Get Sentiment Analysis
 
-# LLM
-- Uses Ollama running on localhost with the model `llama3.2:latest`
+# Technologies Used
+- Python
+- Ollama running on localhost with the model `llama3.2:latest`
+- DuckDuckGo for news scraping
+- Yahoo Finance for stock data
+- Gradio for the user interface
 
 ## UI Screenshot
 ![Stock Analyzer UI](./StockAnalyzer.png)
