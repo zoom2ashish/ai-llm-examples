@@ -20,6 +20,7 @@ Replace `<example_name>` with the directory name of the example you want to run.
 - `stock-researcher`: A stock analysis tool that fetches stock data from Yahoo Finance, company news from DuckDuckGo, and performs sentiment analysis using the LLM. Links to the [README](stock-researcher/README.md) for more details.
 - `sql-query-generator`: A tool that generates SQL queries based on user input. It uses the LLM to understand the user's requirements and generate the appropriate SQL code. Links to the [README](sql-query-generator/README.md) for more details.
 - `stock-researcher-v2`: An updated version of the stock analysis tool with improved features and functionality. Uses multiple agents to fetch stock data and news, and provides a more comprehensive analysis of the stock market. Short-term memory is used to store the context of the conversation, allowing for more accurate and relevant responses from the LLM. Links to the [README](stock-researcher-v2/README.md) for more details.
+- `vector-db-similarity-search`: A vector database for similarity search using ChromaDB. It processes documents (PDF or Markdown), generates embeddings for text chunks, and allows querying through a Gradio-based user interface. Links to the [README](vector-db-similarity-search/README.md) for more details.
 
 ## My Learning Tools
 - [Prompt Engineering](https://www.promptingguide.ai/)
