@@ -25,8 +25,6 @@ def fetch_stock_info(ticker: str) -> dict:
     if not news:
         news = "No recent news found."
 
-    print(f"Stock info for {ticker}: {info}")
-
     return {
         "name": info.get("shortName", "N/A"),
         "currentPrice": info.get("currentPrice", "N/A"),
