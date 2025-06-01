@@ -17,6 +17,7 @@ Replace `<example_name>` with the directory name of the example you want to run.
 
 
 ## Example List
+- `agentic-ui-tester`: A UI testing framework that uses LangChain agents to interact with web pages. It includes tools for navigation, clicking, typing, and checking text on the page. Links to the [README](agentic_ui_tester/README.md) for more details.
 - `stock-researcher`: A stock analysis tool that fetches stock data from Yahoo Finance, company news from DuckDuckGo, and performs sentiment analysis using the LLM. Links to the [README](stock-researcher/README.md) for more details.
 - `sql-query-generator`: A tool that generates SQL queries based on user input. It uses the LLM to understand the user's requirements and generate the appropriate SQL code. Links to the [README](sql-query-generator/README.md) for more details.
 - `stock-researcher-v2`: An updated version of the stock analysis tool with improved features and functionality. Uses multiple agents to fetch stock data and news, and provides a more comprehensive analysis of the stock market. Short-term memory is used to store the context of the conversation, allowing for more accurate and relevant responses from the LLM. Links to the [README](stock-researcher-v2/README.md) for more details.
