@@ -130,4 +130,4 @@ A **vector store** holds all these vectors. When you search for "Beach," it retr
 
 ---
 
-This analogy helps simplify complex AI concepts into something anyone can understand. Let me know if you'd like illustrations or flow diagrams added!
+Hope this analogy helps simplify complex AI concepts into something anyone can understand.
