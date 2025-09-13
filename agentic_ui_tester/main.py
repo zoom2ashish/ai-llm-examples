@@ -13,6 +13,7 @@ test_cases = [
         1. Navigate to the URL "https://zoom2ashish.github.io/".
         2. Check if the text 'Ashish Patel' is present on the page.
         3. Click on the text 'Github' link button on the page.
+        4. Scroll to the bottom of the page.
         """,
         "expected_result": "✅ Text 'Ashish Patel' found on the page and Github page opened successfully."
     },
@@ -22,7 +23,8 @@ test_cases = [
         1. Navigate to the URL "https://zoom2ashish.github.io/".
         2. Check if the text 'Ashish Patel' is present on the page.
         3. Click on the text 'LinkedIn' link button on the page.
-        4. Navigate back to the previous page.
+        4. Scroll to the bottom of the page.
+        5. Navigate back to the previous page.
         """,
         "expected_result": "✅ Text 'Ashish Patel' found on the page and LinkedIn page opened successfully."
     },

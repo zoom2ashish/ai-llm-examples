@@ -26,10 +26,6 @@ class BrowserBot:
         self.page.fill(selector, value)
         return f"Typed '{value}' into '{selector}'"
 
-    def scrollToBottom(self):
-        self.page.evaluate("window.scrollTo(0, document.documentElement.scrollHeight)")
-        return "Scrolled to the bottom of the page."
-
     def back(self):
         self.page.go_back()
         return "Navigated back to the previous page."
@@ -72,13 +68,6 @@ def create_agent(browser_bot, model="gpt-3.5-turbo"):
             func=browser_bot.check_text,
             description="Use this to check if a specific text is present on the page. This tool takes the text to check as an argument."
         ),
-        # Add Scroll Tool
-        StructuredTool.from_function(
-            name="ScrollToBottomTool",
-            func=browser_bot.scrollToBottom,
-            description="Use this to scroll the page to the bottom. This tool does not take any arguments.",
-            args_schema=None  # Explicitly define no inputs
-        ),
         StructuredTool.from_function(
             name="BackTool",
             func=browser_bot.back,
@@ -110,7 +99,6 @@ def create_agent(browser_bot, model="gpt-3.5-turbo"):
             "- ClickTool(text)\n"
             "- TypeTool(selector, text)\n"
             "- CheckTextTool(text)\n"
-            "- ScrollToBottomTool()\n"
             "- CloseTool() — ONLY use when explicitly instructed to close the browser.\n\n"
             "NEVER perform any action outside the test instructions.\n"
             "NEVER use CloseTool unless told to.\n"
